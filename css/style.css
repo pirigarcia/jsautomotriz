@@ -381,3 +381,42 @@
     padding-right: 0;
     border-right: none;
 }
+
+.form-floating{
+    margin-bottom: 10px;
+}
+
+.form-floating label{
+    margin-bottom: 10px;
+}
+
+.form-floating input{
+    margin-bottom: 10px;
+}
+
+.form-floating select{
+    margin-bottom: 10px;
+}
+
+.form-floating textarea{
+    margin-bottom: 10px;
+}
+
+.form-floating input[type="checkbox"]{
+    margin-bottom: 10px;
+}
+
+.form-floating input[type="date"]{
+    margin-bottom: 10px;
+}
+
+.form-floating input[type="tel"]{
+    margin-bottom: 10px;
+}
+
+.form-floating input[type="text"]{
+    margin-bottom: 10px;
+}
+
+
+
