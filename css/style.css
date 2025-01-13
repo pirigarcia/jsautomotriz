@@ -382,41 +382,63 @@
     border-right: none;
 }
 
-.form-floating{
-    margin-bottom: 10px;
+.form-content {
+    background: linear-gradient(
+        50deg, 
+        #00ff80, 
+        #00ff80),
+        url(/img/tus.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 20px;
+        width: 1000px;
+        border-radius: 25px;
+
 }
 
-.form-floating label{
-    margin-bottom: 10px;
-}
-
-.form-floating input{
-    margin-bottom: 10px;
-}
-
-.form-floating select{
-    margin-bottom: 10px;
-}
-
-.form-floating textarea{
-    margin-bottom: 10px;
-}
-
-.form-floating input[type="checkbox"]{
-    margin-bottom: 10px;
-}
-
-.form-floating input[type="date"]{
-    margin-bottom: 10px;
-}
-
-.form-floating input[type="tel"]{
-    margin-bottom: 10px;
-}
-
-.form-floating input[type="text"]{
-    margin-bottom: 10px;
+.form-content h2 {
+    color: #fff;
+    font-size: 25px;
+    margin-bottom: 25px;
 }
 
 
 
+.telefon{
+    margin-bottom: 10px;
+}
+
+.telefon input{
+    margin-bottom: 10px;
+}
+
+.aceptar{
+    margin-bottom: 10px;
+}
+
+.aceptar label{
+    margin-bottom: 10px;
+}
+
+.aceptar input{
+    margin-bottom: 10px;
+}
+
+.aceptar input[type="checkbox"]{
+    margin-bottom: 10px;
+}
+
+
+.was-validated small{
+    border: 1px solid red;
+}
+
+.was-validated .form-control{
+    border: 1px solid red;
+}
+
+#form-validation{
+    display: none;
+}
+    

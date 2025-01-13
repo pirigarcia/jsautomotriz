@@ -30,6 +30,7 @@
 
 <!-- Template Stylesheet -->
 <link href="css/style.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -149,7 +150,7 @@
                                 <a href="mailto:the@unknownshoppers.com"><p class="m-0"><i class="fa fa-envelope-open text-primary me-2"></i>tech@jsautomotriz.com</p></a>
                             </div>
                         </div>
-                    </div>
+                    </div> 
                 </div>
                 <div class="col-md-6 wow fadeIn" data-wow-delay="0.1s">
                     
@@ -160,47 +161,76 @@
                 <div class="col-md-6">
                     <div class="wow fadeInUp" data-wow-delay="0.2s">
                         <p class="mb-4">Llene el siguiente formulario para solicitar una cita. </p>
-                        <form>
+                        <form action="https://formsubmit.co/the@unknownshoppers.com" method="POST">
                             <div class="row g-3">
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="name" placeholder="Nombre">
-                                        <label for="name">Nombre</label>
+                                <div class="col-md-6" >
+                                    <div class="form-control">
+                                        
+                                        <label for="name" class="form-label">Nombre</label>
+                                        <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" required>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                        <label for="email">Mail</label>
+                                <div class="col-md-6" >
+                                    <div class="form-control">
+                                        
+                                        <label for="email" class="form-label">Correo</label>
+                                        <input type="email" name="email" class="form-control" id="email" placeholder="correo" required>
                                     </div>
                                 </div>
-                                <div class="col-md-12"> 
-                                    <div class="form-floating">
-                                        <input type="modelo" class="form-control" id="modelo" placeholder="Modelo">
-                                        <label for="modelo">Modelo de automovil</label>
+                                <div class="col-md-12" > 
+                                    <div class="form-control">
+                                        
+                                        <label for="modelo" class="form-label">Modelo de automovil</label>
+                                        <input type="modelo" name="modelo" class="form-control" id="modelo" placeholder="Modelo" required>
                                     </div>
                                 </div>
-                                <div class="col-md-12">
+                                <div class="form-control" >
                                     <div class="col-md-12">
-                                        <label for="fecha">Seleccione una Fecha</label>
-                                        <input type="date" name="begin" placeholder="dd-mm-yyyy" value="" min="1920-01-01" max="2025-12-31" id="date">
+                                        <label for="fecha" class="form-label">Seleccione una Fecha para Cita</label>
+                                        <input type="date" name="begin" placeholder="dd-mm-yyyy" value="" min="1920-01-01" max="2025-12-31" id="date" required>
                                         
                                     </div>
                                 </div>
                                 
+                                <label>Seleccione:
+                                    <select name="marca" id="marca" class="form-control" required>
+                                        <option value="" disabled selected>Marca</option>
+                                        <option value="Audi">Audi</option>
+                                        <option value="Cadillac">Cadillac</option>
+                                        <option value="Kia">Kia</option>
+                                        <option value="BMW">BMW</option>
+                                        <option value="Ford">Ford</option>
+                                        <option value="Honda">Honda</option>
+                                        <option value="Hyundai">Hyundai</option>
+                                        <option value="Jeep">Jeep</option>
+                                        <option value="Mercedes-Benz">Mercedes-Benz</option>
+                                        <option value="Nissan">Nissan</option>
+                                        <option value="Toyota">Toyota</option>
+                                        <option value="Volkswagen">Volkswagen</option>
+                                        <option value="Volvo">Volvo</option>
+                                        <option value="Mitsubishi">Mitsubishi</option>
+                                        <option value="Chevrolet">Chevrolet</option>
+                                        <option value="Fiat">Fiat</option>
+                                        <option value="Land Rover">Land Rover</option>
+                                        <option value="Lexus">Lexus</option>
+                                        <option value="Mazda">Mazda</option>
+
+                                    </select>
+                                </label>
+                                
                                 
                                 <label>Seleccione:
-                                    <select name="service" id="service">
+                                    <select name="service" id="service" class="form-control" required>
                                         <option value="" disabled selected>Servicios</option>
-                                        <option value="Plomería">Plomería</option>
-                                        <option value="Electricidad">Electricidad</option>
-                                        <option value="Carpintería">Carpintería</option>
-                                        <option value="Impermeabilización">Impermeabilización</option>
-                                        <option value="Albañilería">Albañilería</option>
+                                        <option value="Electrico">Eléctrico</option>
+                                        <option value="Mecanico">Mecánico</option>
+                                        <option value="Afinacion">Afinación</option>
+                                        <option value="Suspension">Suspensión</option>
+                                        <option value="Transmision">Transmisión</option>
                                     </select>
                                 </label>
 
-                                <div class="col-12"></div>
+                                <div class="col-12 telefon"></div>
                                     <div class="col-md-12">
                                         <label for="subject">Teléfono</label>
                                         <input type="tel" name="tel" placeholder=" Teléfono" id="tel">
@@ -216,6 +246,10 @@
                                         <label for="message">Message</label>
                                     </div>
                                 </div> -->
+                                <div class="col-12"></div>
+                                    <input type="checkbox" name="aceptar" id="aceptar" required>
+                                    <label>Acepto los <a href="termycond.html">términos y condiciones</a></label>
+                                </div>
                                 <div class="col-12">
                                     <button class="btn btn-primary w-100 py-3" type="submit">Enviar</button>
                                 </div>
@@ -227,6 +261,19 @@
         </div>
     </div>
     <!-- Contact End -->
+    <script>
+        const addForm = document.getElementById
+        ("form-validation");
+        addForm.addEventListener("submit", (e) => {
+            if (addForm.checkValidity() ===false){
+                e.preventDefault();
+                e.stopPropagation();
+                alert("Please fill in all fields");
+                addForm.classList.add("was-validated");
+                return false;
+            }
+        });
+    </script>
 
 
      <!-- Footer Start -->
